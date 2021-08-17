@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Agenda Telefônica</string>
+    <string name="telefone">Telefone</string>
+    <string name="nome">Nome</string>
+</resources>
