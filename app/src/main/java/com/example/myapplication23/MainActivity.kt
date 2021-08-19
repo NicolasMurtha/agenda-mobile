@@ -25,11 +25,11 @@ class MainActivity : AppCompatActivity() {
         lstPessoa.setOnItemClickListener {parent, view, position, id ->
             val p = lista.get(position)
 
-            val i = Intent(this, EditarActivity::class.java)
+            val u = Intent(this, EditarActivity::class.java)
 
-            i.putExtra("id", p.id)
+            u.putExtra("id", p.id)
 
-            startActivity(i)
+            startActivity(u)
         }
 
         lstPessoa.setOnItemLongClickListener { parent, view, position, id ->
