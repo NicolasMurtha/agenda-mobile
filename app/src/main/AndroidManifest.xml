@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication23">
         <activity
+            android:name=".DeletarActivity"
+            android:exported="true" />
+        <activity
             android:name=".EditarActivity"
             android:exported="true" />
         <activity

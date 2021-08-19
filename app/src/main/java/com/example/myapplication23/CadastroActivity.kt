@@ -18,7 +18,7 @@ class CadastroActivity : AppCompatActivity() {
         val p = Pessoa(edtNome.text.toString(), edtFone.text.toString(), edtId.text.toString().toInt())
         PessoaDB.getInstance(this)!!.pessoaDao().salvar(p)
 
-        Toast.makeText(this, "CONTATO SALVO!", Toast.LENGTH_LONG)
+        Toast.makeText(this, "CONTATO SALVO!", Toast.LENGTH_LONG).show()
 
         finish()
     }

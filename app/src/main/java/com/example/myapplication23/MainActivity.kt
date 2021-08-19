@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 
@@ -31,6 +32,18 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        lstPessoa.setOnItemLongClickListener { parent, view, position, id ->
+            val p = lista.get(position)
+
+            val i = Intent(this, DeletarActivity::class.java)
+
+            i.putExtra("id", p.id)
+
+            startActivity(i)
+
+            true
+
+        }
 
     }
 
